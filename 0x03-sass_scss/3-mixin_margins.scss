@@ -1,0 +1,15 @@
+// Define the mixin with a single parameter
+@mixin set-margins($value) {
+  margin-left: $value;
+  margin-right: $value;
+}
+
+// Apply mixin to body
+body {
+  @include set-margins(10px);
+}
+
+// Apply mixin to div
+div {
+  @include set-margins(15px);
+}
